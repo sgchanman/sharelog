@@ -36,7 +36,7 @@
       
       iframe {
         width: 100%;
-        height: calc(100vh - 220px);
+        height: 400px; /* スマートフォンでの表示に適した高さ */
         overflow-y: scroll;
         border: none;
         border-radius: 10px;
@@ -49,8 +49,14 @@
       .title h1 {
         color: #FF9900;
         font-size: 48px;
-        margin: 2
-        ;
+        margin: 2;
+      }
+      
+      @media only screen and (max-width: 500px) {
+        /* スマートフォンの幅に適用されるCSS */
+        iframe {
+          height: 250px; /* スマートフォンでの表示に適した高さ */
+        }
       }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=ZEN+Maru+Gothic&display=swap" rel="stylesheet">
@@ -68,4 +74,5 @@
     </div>
   </body>
 </html>
+
 
